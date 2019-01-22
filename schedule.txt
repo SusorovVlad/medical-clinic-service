@@ -1,0 +1,62 @@
+SCHEDULE
+
+
+There is 2 predefined possibilities 
+	
+	FULL_TIME   a doctor work time starts at 8 and ends at 17
+					(except is the lunch time from 13-14) ONE HOUR
+					
+	
+	PART_TIME   a doctor work time start at 8 and ends at 13
+	
+	
+	
+	
+To setup doctors schedule u should specify it on doctors creation
+or update.. (it is saved in doctor table in db, check Doctor class)
+
+
+There is only 2 endpoint that operated with shedule
+
+FIRST: is returning ONLY AVAILABLE time within indicated date(day)
+
+http://localhost:8080/appointments?doctorId=5&date=2017-02-03
+
+(this will return all the hour and minutes for day of doctors available to be reserved for new appoitment)
+
+example of return 
+	
+	"08:00:00",
+    "08:15:00",
+    "08:30:00",
+    "08:45:00",
+    "09:00:00",
+    "09:15:00",
+    "09:30:00",
+    "09:45:00",
+    "10:00:00",
+    "10:15:00",
+    "10:30:00",
+    "10:45:00",
+    "11:00:00",
+    "11:15:00",
+    "11:30:00",
+    "11:45:00",
+    "12:00:00",
+    "12:15:00",
+    "12:30:00",
+    "12:45:00",
+    "14:00:00",
+    "14:15:00",
+    "14:30:00",
+    "14:45:00",
+    "15:00:00",
+	
+	
+SECOND
+
+http://localhost:8080/appointments?dateTime=2019-01-22T23:44&doctorId=5
+
+check if appointment is available
+
+

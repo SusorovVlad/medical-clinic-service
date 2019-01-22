@@ -1,0 +1,33 @@
+ First u need to create a speciality,
+
+POST http://localhost:8080/specialities
+
+[request-body]
+
+{
+	"title":"Dermatology",
+	"consultation":10.10
+}
+
+rules: title should be unique
+	   consultation price should be a number grater or equals to 0
+	   
+	  
+GET http://localhost:8080/specialities     // all 
+
+
+GET http://localhost:8080/specialities/1   // get id 1
+
+
+PATCH http://localhost:8080/specialities/1   // update id 1
+
+{
+	"title":"new title",
+	"consultation":32.3
+}
+
+
+DELETE http://localhost:8080/specialities/1    // delete 1
+
+rules for removal: no doctors should be linked to that speciality
+hint for removal: remove all doctors attached to that speciality first

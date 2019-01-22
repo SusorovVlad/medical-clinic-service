@@ -34,8 +34,12 @@ public class Appointment {
     private Doctor doctor;
 
     @Getter
-    @Column(name = "BOOKING_DATE_TIME", nullable = false)
-    private LocalDateTime dateTime;
+    @Column(name = "BOOKING_DATE", nullable = false)
+    private LocalDate date;
+
+    @Getter
+    @Column(name = "BOOKING_TIME", nullable = false)
+    private LocalTime time;
 
     @Getter
     @Column(name = "PATIENT_NAME", nullable = false)
@@ -45,9 +49,10 @@ public class Appointment {
     @Column(name = "PATIENT_BIRTH", nullable = false)
     private LocalDate patientBirth;
 
-    public Appointment(Doctor doctor, LocalDateTime dateTime, String patientName, LocalDate patientBirth) {
+    public Appointment(Doctor doctor, LocalDate date, LocalTime time, String patientName, LocalDate patientBirth) {
         this.doctor = doctor;
-        this.dateTime = dateTime;
+        this.date = date;
+        this.time = time;
         this.patientName = patientName;
         this.patientBirth = patientBirth;
     }

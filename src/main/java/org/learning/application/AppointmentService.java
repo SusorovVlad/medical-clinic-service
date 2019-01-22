@@ -21,6 +21,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@Validated
 public class AppointmentService {
 
     private static final int LUNCH_HOUR = 13;
@@ -34,7 +35,7 @@ public class AppointmentService {
         this.appointmentRepository = appointmentRepository;
     }
 
-    public void createAppointment(@Validated AppointmentCreationCommand command) {
+    public void createAppointment(AppointmentCreationCommand command) {
 
         Doctor doctor = doctorRepository.findById(command.doctorId)
                                         .orElseThrow(() -> new DoctorNotFoundException(format("Doctor with id %d not found", command.doctorId)));
@@ -50,7 +51,7 @@ public class AppointmentService {
             throw new IllegalArgumentException("Appointment is already taken");
         }
 
-        appointmentRepository.save(new Appointment(doctor, command.dateTime, command.patientName, command.patientBirth));
+        appointmentRepository.save(new Appointment(doctor, command.dateTime.toLocalDate(), command.dateTime.toLocalTime(), command.patientName, command.patientBirth));
     }
 
     public void removeAppointmentById(Long appointmentId) {
@@ -92,7 +93,7 @@ public class AppointmentService {
                                         .orElseThrow(() -> new DoctorNotFoundException(format("Doctor with id %d not found", doctorId)));
 
         List<LocalTime> appointments = appointmentRepository.findAllByDoctorAndDate(doctor, date).stream()
-                                                            .map(appointment -> appointment.getDateTime().toLocalTime())
+                                                            .map(Appointment::getTime)
                                                             .collect(Collectors.toList());
 
         List<LocalTime> receptions = generateScheduleReceptionTime(doctor.getSchedule());
@@ -104,7 +105,7 @@ public class AppointmentService {
 
     private static boolean isValidAppointmentTime(LocalTime localTime, Schedule schedule) {
 
-        return generateScheduleReceptionTime(schedule).contains(localTime);
+        return generateScheduleReceptionTime(schedule).contains(localTime.withSecond(0));
     }
 
     private static List<LocalTime> generateScheduleReceptionTime(Schedule schedule) {

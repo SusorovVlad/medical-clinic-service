@@ -29,15 +29,15 @@ class AppointmentController {
         this.appointmentService = appointmentService;
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    List<LocalTime> allAvailableAppointmentsByDate(@RequestParam("doctorId") Long doctorId,
-                                                   @RequestParam("date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+    @GetMapping(path = "/doctors/{doctorId}/dates/{date}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    List<LocalTime> allAvailableAppointmentsByDate(@PathVariable("doctorId") Long doctorId,
+                                                   @PathVariable("date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
 
         return appointmentService.allAvailableAppointmentsByDate(doctorId, date);
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    AppointmentStatusTemplate allAvailableAppointmentsByDateTime(@RequestParam("doctorId") Long doctorId,
+    @GetMapping(path = "/doctors/{doctorId}",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    AppointmentStatusTemplate allAvailableAppointmentsByDateTime(@PathVariable("doctorId") Long doctorId,
                                                                  @RequestParam("dateTime") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dateTime) {
 
         return appointmentService.appointmentByDate(doctorId, dateTime);
