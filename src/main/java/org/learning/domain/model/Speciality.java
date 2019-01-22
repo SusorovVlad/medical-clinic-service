@@ -34,6 +34,6 @@ public class Speciality {
     @AttributeOverrides({
                     @AttributeOverride(name="amount", column=@Column(name="CONSULTATION", nullable = false))
     })
-    @JsonDeserialize(converter = CustomMoneyConverter.class)
+    @JsonDeserialize(converter = MoneyConverter.class)
     private Money consultation;
 }

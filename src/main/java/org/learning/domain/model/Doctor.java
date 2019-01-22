@@ -30,6 +30,10 @@ public class Doctor {
     private String name;
 
     @Getter
+    @Column(name = "SCHEDULE", nullable = false)
+    private Schedule schedule;
+
+    @Getter
     @ManyToOne(optional = false)
     @JoinColumn(name = "SPECIALITY_ID")
     private Speciality speciality;
