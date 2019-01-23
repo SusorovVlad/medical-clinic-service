@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.util.Assert;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Embeddable;
 

@@ -1,1 +1,4 @@
+org\learning\domain\model\MoneyConverterTest.class
 org\learning\MedicalClinicServiceApplicationTests.class
+org\learning\domain\model\SpecialityTest.class
+org\learning\domain\model\MoneyTest.class
