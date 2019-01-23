@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.learning.application.AppointmentCreationCommand;
+import org.learning.application.AppointmentDetailsTemplate;
 import org.learning.application.AppointmentService;
 
 import java.time.LocalDate;
@@ -28,7 +29,7 @@ public final class AppointmentCreationRequest {
         this.patientBirth = patientBirth;
     }
 
-    public void dispatchTo(AppointmentService appointmentService) {
-        appointmentService.createAppointment(new AppointmentCreationCommand(doctorId, dateTime, patientName, patientBirth));
+    public AppointmentDetailsTemplate dispatchTo(AppointmentService appointmentService) {
+        return appointmentService.createAppointment(new AppointmentCreationCommand(doctorId, dateTime, patientName, patientBirth));
     }
 }

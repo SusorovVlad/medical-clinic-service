@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0d49c50-81b0-4100-a808-9b638dacc97b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doctor.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schedule.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speciality.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/learning/configuration/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speciality.txt" beforeDir="false" afterPath="$PROJECT_DIR$/speciality.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/learning/application/AppointmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learning/application/AppointmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/learning/domain/model/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learning/domain/model/Appointment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/learning/resources/rest/AppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learning/resources/rest/AppointmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/learning/resources/rest/AppointmentCreationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/learning/resources/rest/AppointmentCreationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +26,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -52,6 +48,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>allAvailableAppointmentsByDateTime</find>
+      <find>jer</find>
+      <find>je</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,13 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/MedicalClinicServiceApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/infrastructure/rest/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/CreateEmployeeRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/EmployeeCreateRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Patient.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Time.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentCreationTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/DoctorRepository.java" />
@@ -82,7 +73,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/SpecialityResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/SpecialityResource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/SpecialityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/CustomerMoneySerializer.java" />
@@ -105,12 +95,20 @@
         <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentTimeTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/AppointmentNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentCreationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentStatusTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/AppointmentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/location.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/common/model/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/common/model/LocationConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/configuration/LocationConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/configuration/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentDetailsTemplate.java" />
       </list>
     </option>
   </component>
@@ -122,9 +120,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -177,6 +175,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="learning" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medical-clinic-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medical-clinic-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="learning" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medical-clinic-service" type="b2602c69:ProjectViewProjectNode" />
@@ -535,16 +542,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548155798864</updated>
-      <workItem from="1548155802669" duration="34267000" />
+      <workItem from="1548155802669" duration="37317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34267000" />
+    <option name="totallyTimeSpent" value="37317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info id="Designer" />
@@ -556,11 +562,11 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32756132" />
       <window_info anchor="bottom" id="Java Enterprise" weight="0.32900432" />
       <window_info anchor="bottom" id="Spring" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.116883114" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.6031746" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.51370853" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -580,48 +586,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Name.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/Patient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/Speciality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/DoctorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/appointment/DoctorRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -732,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -873,33 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentCreationCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentStatusTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="31" column="121" selection-start-line="31" selection-start-column="121" selection-end-line="31" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Speciality.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -909,9 +839,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/SpecialityController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -933,30 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Schedule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -980,10 +887,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="107" column="86" selection-start-line="107" selection-start-column="86" selection-end-line="107" selection-end-column="86" />
+        <state relative-caret-position="155">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentCreationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -992,11 +919,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        <state relative-caret-position="344">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/resources/rest/AppointmentCreationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentStatusTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/domain/model/Appointment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/configuration/LocationConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/configuration/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+          <folding>
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/learning/application/AppointmentDetailsTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="110" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/location.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>

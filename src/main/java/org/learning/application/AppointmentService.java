@@ -2,6 +2,7 @@ package org.learning.application;
 
 import static java.lang.String.format;
 
+import org.learning.configuration.LocationConfiguration;
 import org.learning.domain.model.Appointment;
 import org.learning.domain.model.AppointmentNotFoundException;
 import org.learning.domain.model.AppointmentRepository;
@@ -29,13 +30,17 @@ public class AppointmentService {
 
     private final DoctorRepository doctorRepository;
     private final AppointmentRepository appointmentRepository;
+    private final LocationConfiguration locationConfiguration;
 
-    public AppointmentService(DoctorRepository doctorRepository, AppointmentRepository appointmentRepository) {
+    public AppointmentService(DoctorRepository doctorRepository,
+                              AppointmentRepository appointmentRepository,
+                              LocationConfiguration locationConfiguration) {
         this.doctorRepository = doctorRepository;
         this.appointmentRepository = appointmentRepository;
+        this.locationConfiguration = locationConfiguration;
     }
 
-    public void createAppointment(AppointmentCreationCommand command) {
+    public AppointmentDetailsTemplate createAppointment(AppointmentCreationCommand command) {
 
         Doctor doctor = doctorRepository.findById(command.doctorId)
                                         .orElseThrow(() -> new DoctorNotFoundException(format("Doctor with id %d not found", command.doctorId)));
@@ -52,6 +57,8 @@ public class AppointmentService {
         }
 
         appointmentRepository.save(new Appointment(doctor, command.dateTime.toLocalDate(), command.dateTime.toLocalTime(), command.patientName, command.patientBirth));
+
+        return new AppointmentDetailsTemplate(doctor, command.dateTime, doctor.getSpeciality().getConsultation(), locationConfiguration.location);
     }
 
     public void removeAppointmentById(Long appointmentId) {

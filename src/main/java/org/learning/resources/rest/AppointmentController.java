@@ -1,5 +1,6 @@
 package org.learning.resources.rest;
 
+import org.learning.application.AppointmentDetailsTemplate;
 import org.learning.application.AppointmentService;
 import org.learning.application.AppointmentStatusTemplate;
 import org.learning.domain.model.Appointment;
@@ -62,8 +63,8 @@ class AppointmentController {
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public void createAppointment(@RequestBody AppointmentCreationRequest request) {
+    public AppointmentDetailsTemplate createAppointment(@RequestBody AppointmentCreationRequest request) {
 
-        request.dispatchTo(appointmentService);
+        return request.dispatchTo(appointmentService);
     }
 }

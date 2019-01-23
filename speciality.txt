@@ -10,7 +10,7 @@ POST http://localhost:8080/specialities
 }
 
 rules: title should be unique
-	   consultation price should be a number grater or equals to 0
+	   consultation consultationPrice should be a number grater or equals to 0
 	   
 	  
 GET http://localhost:8080/specialities     // all 

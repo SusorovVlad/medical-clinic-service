@@ -24,6 +24,7 @@ import javax.persistence.Table;
 public class Appointment {
 
     @Id
+    @Getter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private Long id;

@@ -1,0 +1,22 @@
+appointments
+
+
+POST http://localhost:8080/appointments 
+
+{
+	"doctorId":"1",
+	"dateTime":"2019-02-03T14:45",       
+	"patientName":"Ion",
+	"patientBirth":"1995-05-03"
+}
+
+
+GET http://localhost:8080/appointments           // all
+
+
+GET http://localhost:8080/appointments/1          // by id 1
+
+
+DELETE http://localhost:8080/appointments/1         // remove it
+
+
